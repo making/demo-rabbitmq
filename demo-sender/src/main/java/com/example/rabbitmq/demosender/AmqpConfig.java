@@ -17,4 +17,5 @@ public class AmqpConfig {
 	public Jackson2JsonMessageConverter jsonMessageConverter() {
 		return new Jackson2JsonMessageConverter();
 	}
+
 }

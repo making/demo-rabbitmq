@@ -19,9 +19,7 @@ public class AmqpConfig {
 
 	@Bean
 	public Queue orderEventQueue() {
-		return QueueBuilder.durable("demo.event")
-				.quorum()
-				.build();
+		return QueueBuilder.durable("demo.event").quorum().build();
 	}
 
 	@Bean
@@ -33,4 +31,5 @@ public class AmqpConfig {
 	public Jackson2JsonMessageConverter jsonMessageConverter() {
 		return new Jackson2JsonMessageConverter();
 	}
+
 }
