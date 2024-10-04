@@ -7,3 +7,8 @@
 http://localhost:15672 `guest`/`guest`
 
 <img width="1024" alt="image" src="https://github.com/user-attachments/assets/fc27a162-d0cb-4a98-a692-ec3731341c62">
+
+```
+./mvnw -V --no-transfer-progress spring-boot:build-image -f demo-receiver -DskipTests -Dspring-boot.build-image.imageName=ghcr.io/making/demo-rabbitmq-receiver
+./mvnw -V --no-transfer-progress spring-boot:build-image -f demo-sender -DskipTests -Dspring-boot.build-image.imageName=ghcr.io/making/demo-rabbitmq-sender
+```
